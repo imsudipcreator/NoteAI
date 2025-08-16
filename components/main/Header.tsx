@@ -4,13 +4,13 @@ import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 const Header = () => {
     return (
-        <View className='w-full min-h-16 px-4 py-3 flex flex-col items-center justify-center'>
+        <View className='w-full min-h-12 pt-3 flex flex-col items-center justify-center '>
             <View className='w-full h-16 flex flex-row items-center justify-between'>
-                <Text className='text-3xl font-semibold'>Note AI</Text>
+                <Text className='text-3xl font-semibold font-dmsans-medium'>Note AI</Text>
                 <View className='flex flex-row items-center justify-center gap-4'>
-                    <TouchableOpacity className='flex flex-row items-center justify-center rounded-full gap-1 px-2.5 py-1.5 bg-yellow-400 border border-yellow-700'>
-                        <Gem size={18} />
-                        <Text className=''>Try Pro</Text>
+                    <TouchableOpacity className='flex flex-row items-center justify-center rounded-full font gap-1 px-2.5 py-1.5 bg-yellow-400 border border-yellow-600'>
+                        <Gem size={16} color={'#713f12'}/>
+                        <Text className='font-dmsans-medium text-yellow-900'>Try Pro</Text>
                     </TouchableOpacity>
                     <TouchableOpacity className='bg-transparent'>
                         <Settings size={22} />
@@ -22,7 +22,7 @@ const Header = () => {
                     <View className='h-full flex items-center justify-center px-3'>
                         <Search size={22} color={'gray'}/>
                     </View>
-                    <TextInput style={{ fontSize : 16 }} className='flex-1 bg-transparent' placeholder='Search your notes...'/>
+                    <TextInput style={{ fontSize : 16 }} className='flex-1 bg-transparent font-dmsans' placeholder='Search your notes...'/>
                 </View>
             </View>
         </View>
