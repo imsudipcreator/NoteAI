@@ -16,7 +16,7 @@ const HomeScreen = () => {
     const ref = useRef<BottomSheetRefProps>(null)
     const onPress = useCallback(() => {
         translateY.value = withSpring(0, { damping: 20 })
-        if (ref.current) ref.current.active.value = true
+        if (ref.current) ref.current.setIsOpen(true)
     }, [translateY])
     return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -31,6 +31,7 @@ const HomeScreen = () => {
                 </SafeAreaView>
             </GestureHandlerRootView>
         </TouchableWithoutFeedback>
+
     )
 }
 

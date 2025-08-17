@@ -8,11 +8,11 @@ const Header = () => {
             <View className='w-full h-16 flex flex-row items-center justify-between'>
                 <Text className='text-3xl font-semibold font-dmsans-medium'>Note AI</Text>
                 <View className='flex flex-row items-center justify-center gap-4'>
-                    <TouchableOpacity className='flex flex-row items-center justify-center rounded-full font gap-1 px-2.5 py-1.5 bg-yellow-400 border border-yellow-600'>
+                    <TouchableOpacity activeOpacity={0.6} className='flex flex-row items-center justify-center rounded-full font gap-1 px-2.5 py-1.5 bg-yellow-400 border border-yellow-600'>
                         <Gem size={16} color={'#713f12'}/>
                         <Text className='font-dmsans-medium text-yellow-900'>Try Pro</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity className='bg-transparent'>
+                    <TouchableOpacity activeOpacity={0.6} className='bg-transparent'>
                         <Settings size={22} />
                     </TouchableOpacity>
                 </View>
